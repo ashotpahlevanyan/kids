@@ -1,0 +1,92 @@
+.carousel-control {
+	width: 55px;
+	height: 60px;
+	position: absolute;
+	top: auto;
+	bottom: 32.5px;
+	&.left, &.right {
+		background: none;
+	}
+	&.left {
+		left: 37.5px;
+		background: url("../images/arrowLeftOrange.svg") 0 0 no-repeat;
+		background-size: 50px 55px;
+		&:hover {
+			background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
+			background-size: 50px 55px;
+		}
+	}
+	&.right {
+		right: 37.5px;
+		background: url("../images/arrowRightOrange.svg") 0 0 no-repeat;
+		background-size: 50px 55px;
+		&:hover {
+			background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
+			background-size: 50px 55px;
+		}
+	}
+}
+
+.carouselWrapper {
+	margin-top: 50px;
+	padding-left: 50px;
+	background-color: transparent;
+	@extend .rightAlignMixin;
+	width: calc(57.5% - 496px);
+	min-width: 450px;
+	
+	top: 0;
+	.whiteArrow {
+		position: absolute;
+		bottom: 40px;
+		left: 10px;
+		border-left: none;
+		border-right: 40px solid #fff;
+		border-bottom: 35px solid transparent;
+		border-top: 35px solid transparent;
+		z-index: 2;
+	}
+	.transparentArrow {
+		position: absolute;
+		bottom: 34px;
+		left: 14px;
+		border-left: none;
+		border-right: 36px solid rgba(0, 0, 0, 0.15);
+		border-bottom: 31px solid transparent;
+		border-top: 31px solid transparent;
+		z-index: 1;
+	}
+}
+.ourCarousel {
+	// width: 400px;//800px;
+	// height: 333.5px; //667px;
+	min-height: 333.5px;
+	padding: 37.5px 37.5px 32.5px 37.5px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 4px 8px 0 0 rgba(0, 0, 0, 0.15);
+	.carousel-indicators {
+		bottom: 35px;
+		li {
+			width: 20px;
+			height: 20px;
+			border: 4px solid #ff5722;
+			border-radius: 10px;
+			display: inline-block;
+			margin: 1px;
+			&.active {
+				border: 4px solid #ff5722;
+				background-color: #ff5722;
+			}
+			& + li {
+				margin-left: 6px;
+			}
+		}
+	}
+}
+.carousel-inner .item {
+	width: 100%;
+	height: -moz-calc(100% - 91px);
+	height: -webkit-calc(100% - 91px);
+	height: calc(100% - 91px);
+}

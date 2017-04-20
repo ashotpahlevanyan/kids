@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="232px" height="248px" viewBox="0 0 232 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustration/ SCR02/ Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="4449" height="1024" rx="100"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4449" height="1024" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="4" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M58.0770413,8.96023409e-05 C31.3385102,-0.0180781957 26.6139058,2.73518902 26.6139058,2.73518902 C14.4542422,5.25809688 6.46950765,17.1950042 8.78221268,29.4113358 L29.6862373,139.832032 C31.2278292,147.975135 25.765586,154.576425 17.4735187,154.576425 L19.6258341,154.576425 C-1.0832163,154.576425 -6.22632115,166.681651 8.12812423,181.603535 L42.3826313,217.21214 C50.9996833,226.169828 64.9622635,226.178582 73.5848622,217.215128 L107.769904,181.678735 C122.130377,166.750585 116.988941,154.648928 96.274788,154.648928 L98.4271035,154.648928 C90.1406134,154.648928 84.6706705,148.05885 86.2143848,139.904535 L107.118409,29.483839 C109.429901,17.2739178 101.512675,5.0468838 89.2999118,2.75428777 C89.2999118,2.75428777 84.8155724,0.0182574004 58.0770413,8.96023409e-05 Z" id="path-4"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Boxes" transform="translate(-9165.000000, -5816.000000)" stroke="#F6A623" stroke-width="50">
+            <g id="Group-15-Copy" transform="translate(7776.000000, 5746.000000)">
+                <use id="Rectangle-30-Copy-6" mask="url(#mask-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+        <g id="Illustration/-SCR02/-Arrow">
+            <g id="Arrow" filter="url(#filter-3)" transform="translate(115.558350, 123.540930) rotate(-39.000000) translate(-115.558350, -123.540930) translate(57.558350, 11.540930)">
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#FF5722" xlink:href="#path-4"></use>
+                <rect id="Rectangle-7" fill-opacity="0.15" fill="#000000" mask="url(#mask-5)" x="57.8045326" y="-122.915114" width="234.220963" height="377.73913"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

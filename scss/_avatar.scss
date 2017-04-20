@@ -1,0 +1,16 @@
+.avatarBehindDesk {
+	// width: 306.5px; //613px;
+	// height: 274px; //548px;
+	width: 35%;
+	// min-height: 274px;
+	height: auto;
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	@extend .leftAlignMixin;
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Buttons/ Symbols/ Arrow Big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2272" y="1804" width="2868" height="1687" rx="100"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="2868" height="1687" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Boxes" transform="translate(-4738.000000, -1946.000000)" stroke="#F6A623" stroke-width="50">
+            <use id="Rectangle-30-Copy-2" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Buttons/-Symbols/-Arrow-Big" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M15.6966991,45.9099026 C12.767767,48.8388348 12.767767,53.5875721 15.6966991,56.5165043 C18.6256313,59.4454365 23.3743687,59.4454365 26.3033009,56.5165043 L47.5165043,35.3033009 C50.4454365,32.3743687 50.4454365,27.6256313 47.5165043,24.6966991 L26.3033009,3.48349571 C23.3743687,0.554563517 18.6256313,0.554563517 15.6966991,3.48349571 C12.767767,6.41242789 12.767767,11.1611652 15.6966991,14.0900974 L31.6066017,30 L15.6966991,45.9099026 Z" id="Rectangle-21"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="100" height="110" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    Dynamic elements/ Button/ Download (green)
+  </title>
+  <defs>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="b">
+      <feOffset dx="4" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" in="shadowOffsetOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <rect id="a" x="-457" y="-292" width="2868" height="1687" rx="100"/>
+    <mask id="c" x="0" y="0" width="2868" height="1687" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g>
+      <g filter="url(#b)">
+        <path d="M0 50C0 22.386 22.386 0 50 0s50 22.386 50 50v10c0 .488-.007.975-.02 1.46C99.205 88.4 77.125 110 50 110 22.97 110 .95 88.553.03 61.748.01 61.168 0 60.585 0 60V50z" fill="#4CAF50"/>
+        <path d="M100 60V50c0-27.614-22.386-50-50-50S0 22.386 0 50v10c0-27.614 22.386-50 50-50s50 22.386 50 50z" fill-opacity=".3" fill="#000"/>
+        <g transform="translate(20 30)" fill="#FFF">
+          <rect x="3" y="44" width="55" height="14" rx="5"/>
+          <path d="M24.473 23.19l-6.886-6.97c-2.193-2.22-5.75-2.22-7.942 0-2.193 2.22-2.193 5.818 0 8.038L25.53 40.335c2.192 2.22 5.748 2.22 7.94 0l15.885-16.077c2.193-2.22 2.193-5.82 0-8.04-2.193-2.22-5.75-2.22-7.942 0l-6.457 6.537V2H24.473v21.19z" fill-rule="nonzero"/>
+        </g>
+      </g>
+    </g>
+    <use stroke="#F6A623" mask="url(#c)" stroke-width="50" xlink:href="#a"/>
+  </g>
+</svg>

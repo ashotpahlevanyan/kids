@@ -1,0 +1,334 @@
+/*==========================================*/
+/*Styles imports
+============================================*/
+/*
+
+    reset.css
+    * Resets default browser CSS.
+
+*/
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important;
+}
+
+table, th, td {
+  vertical-align: middle;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none;
+}
+
+/* Remember to define your own focus styles! */
+:focus {
+  outline: 0;
+}
+
+/*
+@mixin calcW($percent, $offset) {
+  width: calc($percent - $offset);
+  width: -webkit-calc($percent - $offset);
+  width: expression($percent - $offset);
+  width: -webkit-calc(100% - 299px); 
+      width: calc(100% - 299px); 
+      width: expression(100% - 299px);
+}
+@mixin calcH($percent, $offset) {
+  height: -webkit-calc($percent - $offset);
+  height: expression($percent - $offset);
+  height: calc($percent - $offset);
+}
+*/
+/* placeholders for changable elements 
+=====================================*/
+/* placeholders for repeated elements 
+=====================================*/
+*,
+*:before,
+*:after {
+  /* box sizing for all element in pages */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*===========================================
+
+	baseElement.scss
+	* css style for base Elements
+
+=============================================*/
+*, *:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  background: url("../images/bg_ref.png") 0 0 no-repeat;
+  font-family: FredokaOne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body * {
+  font-family: FredokaOne;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* FONT Definitions =================================
+=====================================================*/
+@font-face {
+  font-family: 'FredokaOne';
+  src: url("fonts/FredokaOne.eot");
+  src: url("fonts/FredokaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*==========================================*/
+/* Website specific styles
+============================================*/
+.rightAlignMixin, .carouselWrapper {
+  position: absolute;
+  right: -moz-calc(50% - 496px);
+  right: -webkit-calc(50% - 496px);
+  right: calc(50% - 496px);
+}
+
+.leftAlignMixin, .logoRocket, .avatarBehindDesk {
+  position: absolute;
+  left: -moz-calc(50% - 496px);
+  left: -webkit-calc(50% - 496px);
+  left: calc(50% - 496px);
+}
+
+@media (max-width: 992px) {
+  .rightAlignMixin, .carouselWrapper {
+    right: -moz-calc(50% - 384px);
+    right: -webkit-calc(50% - 384px);
+    right: calc(50% - 384px);
+  }
+
+  .leftAlignMixin, .logoRocket, .avatarBehindDesk {
+    left: -moz-calc(50% - 384px);
+    left: -webkit-calc(50% - 384px);
+    left: calc(50% - 384px);
+  }
+}
+@media (max-width: 768px) {
+  .rightAlignMixin, .carouselWrapper {
+    right: 20px;
+  }
+
+  .leftAlignMixin, .logoRocket, .avatarBehindDesk {
+    left: 20px;
+  }
+}
+.mainWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 992px;
+  left: -moz-calc(50% - 496px);
+  left: -webkit-calc(50% - 496px);
+  left: calc(50% - 496px);
+  right: -moz-calc(50% - 496px);
+  right: -webkit-calc(50% - 496px);
+  right: calc(50% - 496px);
+}
+
+@media (max-width: 992px) {
+  .mainWrapper {
+    width: 750px;
+    left: -moz-calc(50% - 384px);
+    left: -webkit-calc(50% - 384px);
+    left: calc(50% - 384px);
+    right: -moz-calc(50% - 384px);
+    right: -webkit-calc(50% - 384px);
+    right: calc(50% - 384px);
+  }
+}
+@media (max-width: 768px) {
+  .mainWrapper {
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+}
+.carousel-control {
+  width: 55px;
+  height: 60px;
+  position: absolute;
+  top: auto;
+  bottom: 32.5px;
+}
+.carousel-control.left, .carousel-control.right {
+  background: none;
+}
+.carousel-control.left {
+  left: 37.5px;
+  background: url("../images/arrowLeftOrange.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.left:hover {
+  background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.right {
+  right: 37.5px;
+  background: url("../images/arrowRightOrange.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.right:hover {
+  background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+
+.carouselWrapper {
+  margin-top: 50px;
+  padding-left: 50px;
+  background-color: transparent;
+  width: calc(57.5% - 496px);
+  min-width: 450px;
+  top: 0;
+}
+.carouselWrapper .whiteArrow {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  border-left: none;
+  border-right: 40px solid #fff;
+  border-bottom: 35px solid transparent;
+  border-top: 35px solid transparent;
+  z-index: 2;
+}
+.carouselWrapper .transparentArrow {
+  position: absolute;
+  bottom: 34px;
+  left: 14px;
+  border-left: none;
+  border-right: 36px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 31px solid transparent;
+  border-top: 31px solid transparent;
+  z-index: 1;
+}
+
+.ourCarousel {
+  min-height: 333.5px;
+  padding: 37.5px 37.5px 32.5px 37.5px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 8px 0 0 rgba(0, 0, 0, 0.15);
+}
+.ourCarousel .carousel-indicators {
+  bottom: 35px;
+}
+.ourCarousel .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border: 4px solid #ff5722;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1px;
+}
+.ourCarousel .carousel-indicators li.active {
+  border: 4px solid #ff5722;
+  background-color: #ff5722;
+}
+.ourCarousel .carousel-indicators li + li {
+  margin-left: 6px;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  height: -moz-calc(100% - 91px);
+  height: -webkit-calc(100% - 91px);
+  height: calc(100% - 91px);
+}
+
+.logoRocket {
+  width: 102px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 190px;
+  display: block;
+}
+.logoRocket img {
+  width: 100%;
+  height: auto;
+}
+
+.avatarBehindDesk {
+  width: 35%;
+  height: auto;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+}
+.avatarBehindDesk img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

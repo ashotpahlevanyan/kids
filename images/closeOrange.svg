@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="110px" viewBox="0 0 100 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Dynamic elements/ Button/ Close (Orange)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="4" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="-457" y="-142" width="2868" height="1687" rx="100"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="2868" height="1687" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dynamic-elements/-Button/-Close-(Orange)">
+            <g id="Group-2" filter="url(#filter-1)">
+                <path d="M0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 L100,60 C100,60.4884164 99.992997,60.9751972 99.9790858,61.4602474 C99.2064849,88.3991139 77.1258211,110 50,110 C22.9708078,110 0.950892653,88.5527352 0.0299811918,61.747932 C0.0100481178,61.1677437 0,60.5850453 0,60 L0,50 Z" id="Combined-Shape" fill="#FF5722"></path>
+                <path d="M100,60 L100,50 C100,22.3857625 77.6142375,0 50,0 C22.3857625,0 2.13162821e-14,22.3857625 2.13162821e-14,50 L2.13162821e-14,60 C1.42108547e-14,32.3857625 22.3857625,10 50,10 C77.6142375,10 100,32.3857625 100,60 L100,60 Z" id="Combined-Shape" fill-opacity="0.3" fill="#000000"></path>
+                <g id="Symbol/-Cross" transform="translate(20.000000, 30.000000)" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round">
+                    <path d="M52.0014515,8 L7.99559447,52" id="Path-2" transform="translate(29.998523, 30.000000) scale(-1, 1) translate(-29.998523, -30.000000) "></path>
+                    <path d="M52,8 L8,52" id="Path-3"></path>
+                </g>
+            </g>
+        </g>
+        <use id="Rectangle-30-Copy-2" stroke="#F6A623" mask="url(#mask-3)" stroke-width="50" xlink:href="#path-2"></use>
+    </g>
+</svg>

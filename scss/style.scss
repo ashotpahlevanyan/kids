@@ -1,0 +1,18 @@
+/*==========================================*/
+/*Styles imports
+============================================*/
+
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "placeholders";
+@import "baseElements";
+@import "fonts";
+
+/*==========================================*/
+/* Website specific styles
+============================================*/
+@import "wrapper";
+@import "slider";
+@import "logo";
+@import "avatar";

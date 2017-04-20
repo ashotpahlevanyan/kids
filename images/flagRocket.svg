@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="380px" viewBox="0 0 204 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustration/ SCR02/ Flag rocket</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="4449" height="1024" rx="100"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4449" height="1024" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="0 0 200 0 200 372 100 321 0 372"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="4" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="4" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M7.14877307,3.30819176 C-10.8489071,21.4409923 11.7484787,50.0465838 11.7484787,50.0465838 C11.7484787,50.0465838 48.0356499,29.8207079 25.4127013,3.12046475 C20.8006058,-0.781744075 11.2359986,-0.809719236 7.14877307,3.30819176 Z" id="path-6"></path>
+        <path d="M6.19755322,1.69554254 L0.105043275,19.2867964 C0.105043275,19.2867964 5.98746667,27.3406235 25.8406456,27.3406235 C45.6938246,27.3406235 49.3703392,21.7241388 49.3703392,21.7241388 L42.1223532,6.32195572e-14 L6.19755322,1.69554254 Z" id="path-8"></path>
+        <path d="M42.9634637,153.4466 C66.6911074,153.4466 85.4009467,134.159804 85.9261631,86.8965554 C86.4513795,39.633307 42.9634637,-4.03285915e-13 42.9634637,-4.03285915e-13 C42.9634637,-4.03285915e-13 -0.20932229,38.7855357 0.000764259381,86.8965554 C0.210850809,135.007575 19.23582,153.4466 42.9634637,153.4466 Z" id="path-10"></path>
+        <ellipse id="path-12" cx="39.3326413" cy="35.3630971" rx="39.2861848" ry="35.2884792"></ellipse>
+        <ellipse id="path-14" cx="21.5338713" cy="21.7241388" rx="21.5338713" ry="21.7241388"></ellipse>
+        <path d="M36.9752328,27.5525663 C32.2482854,15.3658543 33.613848,9.74936963 31.3028959,5.29857045 C28.9919439,0.847771272 26.3743246,-0.243987981 24.8952561,0.211942818 C13.5505825,3.70899931 7.81169957e-13,16.9850751 7.81169957e-13,34.0155564 C7.81169957e-13,49.7433061 8.01029716,62.7209574 18.3611268,64.6143567 C17.636326,61.7159288 17.2458498,58.6340963 17.2458498,55.4387494 C17.2458498,38.8476831 36.9752328,27.5525663 36.9752328,27.5525663 Z" id="path-16"></path>
+        <path d="M36.9752328,27.5525663 C32.2482854,15.3658543 33.613848,9.74936963 31.3028959,5.29857045 C28.9919439,0.847771272 26.3743246,-0.243987981 24.8952561,0.211942818 C13.5505825,3.70899931 2.17042638e-13,16.9850751 2.17042638e-13,34.0155564 C2.17042638e-13,49.7433061 8.01029716,62.7209574 18.3611268,64.6143567 C17.636326,61.7159288 17.2458498,58.6340963 17.2458498,55.4387494 C17.2458498,38.8476831 36.9752328,27.5525663 36.9752328,27.5525663 Z" id="path-18"></path>
+        <path d="M4.11459529,68.8475365 C4.11459529,68.8475365 0.793508579,46.0646062 0.262069677,26.7853055 C-0.127702524,12.6453254 0.98312346,0.390006329 6.00537424,0.390006329 C11.0748995,0.390006329 11.4692347,12.8771302 10.2571284,27.1850971 C8.63118432,46.3780963 4.11459529,68.8475365 4.11459529,68.8475365 Z" id="path-20"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Boxes" transform="translate(-8852.000000, -5816.000000)" stroke="#F6A623" stroke-width="50">
+            <g id="Group-15-Copy" transform="translate(7776.000000, 5746.000000)">
+                <use id="Rectangle-30-Copy-6" mask="url(#mask-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+        <g id="Illustration/-SCR02/-Flag-rocket">
+            <g id="Rectangle-19">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#FF5722" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <g id="Illustration/-Rocket" transform="translate(0.000000, 45.000000)">
+                <g id="Rocket" filter="url(#filter-5)" transform="translate(100.073559, 120.750150) rotate(24.000000) translate(-100.073559, -120.750150) translate(36.646449, 16.999086)">
+                    <g id="Flame" transform="translate(46.066251, 156.942781)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#FFC107" xlink:href="#path-6"></use>
+                        <path d="M8.67705546,-0.000269341478 C-7.0967966,17.2797447 13.8317283,39.0591484 13.8317283,39.0591484 C13.8317283,39.0591484 39.951914,24.2722064 24.0302674,-0.337947716 C19.4181719,-4.24015654 12.6451508,-4.34725718 8.67705546,-0.000269341478 Z" id="Path-3" fill="#FF9800" mask="url(#mask-7)"></path>
+                        <path d="M10.1302684,0.245020991 C-0.576266524,13.6237025 14.8176085,25.8194628 14.8176085,25.8194628 C14.8176085,25.8194628 33.2292732,17.5528731 22.8378356,-0.0939266508 C18.5220993,-3.25987822 13.4555858,-3.91023219 10.1302684,0.245020991 Z" id="Path-3" fill="#FF5722" mask="url(#mask-7)"></path>
+                    </g>
+                    <g id="Tail" transform="translate(37.815579, 143.061402)">
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <use id="Path-17" fill="#607D8B" xlink:href="#path-8"></use>
+                        <polygon id="Path-4" fill-opacity="0.15" fill="#000000" mask="url(#mask-9)" points="25.3554091 39.840202 25.3821524 -5.2253358 52.0936829 -6.2594867 66.1749339 32.4717515 33.9832835 45.7077064"></polygon>
+                    </g>
+                    <g id="Body" transform="translate(22.059088, -0.000000)">
+                        <mask id="mask-11" fill="white">
+                            <use xlink:href="#path-10"></use>
+                        </mask>
+                        <use id="Oval-5" fill="#EEEEEE" xlink:href="#path-10"></use>
+                        <g id="Group-6" mask="url(#mask-11)">
+                            <g transform="translate(3.735101, -35.469068)">
+                                <mask id="mask-13" fill="white">
+                                    <use xlink:href="#path-12"></use>
+                                </mask>
+                                <use id="Oval-6" stroke="none" fill="#FF5722" fill-rule="evenodd" xlink:href="#path-12"></use>
+                            </g>
+                        </g>
+                        <ellipse id="Oval-7" fill="#757575" mask="url(#mask-11)" cx="43.0677427" cy="77.3591286" rx="27.3112515" ry="27.5525663"></ellipse>
+                        <g id="Group" mask="url(#mask-11)">
+                            <g transform="translate(21.638915, 55.740961)">
+                                <mask id="mask-15" fill="white">
+                                    <use xlink:href="#path-14"></use>
+                                </mask>
+                                <use id="Oval-7" stroke="none" fill="#00B0FF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                            </g>
+                        </g>
+                        <polygon id="Path-2" fill-opacity="0.15" fill="#000000" mask="url(#mask-11)" points="39.9350487 181.6035 43.3375765 -11.706109 127.490505 50.358723 145.068455 127.094037 103.232255 207.369909"></polygon>
+                    </g>
+                    <g id="Left-wing" transform="translate(-0.000000, 113.389408)">
+                        <mask id="mask-17" fill="white">
+                            <use xlink:href="#path-16"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#FF5722" xlink:href="#path-16"></use>
+                    </g>
+                    <g id="Right-Wing" transform="translate(108.012113, 145.827706) scale(-1, 1) translate(-108.012113, -145.827706) translate(89.342036, 113.389408)">
+                        <mask id="mask-19" fill="white">
+                            <use xlink:href="#path-18"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#FF5722" xlink:href="#path-18"></use>
+                    </g>
+                    <g id="Central-Wing" transform="translate(57.038247, 113.904301)">
+                        <mask id="mask-21" fill="white">
+                            <use xlink:href="#path-20"></use>
+                        </mask>
+                        <use id="Path-15" fill="#FF5722" xlink:href="#path-20"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
