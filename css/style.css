@@ -96,6 +96,18 @@ a img {
 =====================================*/
 /* placeholders for repeated elements 
 =====================================*/
+.noMargin, .textBig-40, .textBig-40-white, .textStandard-28, .textStandard-28-white, .textSmall-20-Orange, .textSmall-20 {
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.lineHeightNormal, .textBig-40, .textBig-40-white, .textStandard-28, .textStandard-28-white, .textSmall-20-Orange, .textSmall-20 {
+  line-height: 1.2;
+}
+
 *,
 *:before,
 *:after {
@@ -145,17 +157,55 @@ body * {
   font-weight: normal;
   font-style: normal;
 }
+/* text styles */
+.textBig-40 {
+  font-family: FredokaOne;
+  font-size: 20px;
+  color: #0b0433;
+}
+
+.textBig-40-white {
+  font-family: FredokaOne;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.textStandard-28 {
+  font-family: FredokaOne;
+  font-size: 14px;
+  color: #0b0433;
+}
+
+.textStandard-28-white {
+  font-family: FredokaOne;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.textSmall-20-Orange {
+  font-family: FredokaOne;
+  font-size: 10px;
+  color: #ff5020;
+}
+
+.textSmall-20 {
+  font-family: FredokaOne;
+  font-size: 10px;
+}
+
 /*==========================================*/
 /* Website specific styles
 ============================================*/
-.rightAlignMixin, .carouselWrapper {
+.rightAlignMixin {
   position: absolute;
   right: -moz-calc(50% - 496px);
   right: -webkit-calc(50% - 496px);
   right: calc(50% - 496px);
 }
 
-.leftAlignMixin, .logoRocket, .avatarBehindDesk {
+.leftAlignMixin {
   position: absolute;
   left: -moz-calc(50% - 496px);
   left: -webkit-calc(50% - 496px);
@@ -163,58 +213,68 @@ body * {
 }
 
 @media (max-width: 992px) {
-  .rightAlignMixin, .carouselWrapper {
+  .rightAlignMixin {
     right: -moz-calc(50% - 384px);
     right: -webkit-calc(50% - 384px);
     right: calc(50% - 384px);
   }
 
-  .leftAlignMixin, .logoRocket, .avatarBehindDesk {
+  .leftAlignMixin {
     left: -moz-calc(50% - 384px);
     left: -webkit-calc(50% - 384px);
     left: calc(50% - 384px);
   }
 }
 @media (max-width: 768px) {
-  .rightAlignMixin, .carouselWrapper {
+  .rightAlignMixin {
     right: 20px;
   }
 
-  .leftAlignMixin, .logoRocket, .avatarBehindDesk {
+  .leftAlignMixin {
     left: 20px;
   }
 }
-.mainWrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.topWrapper {
   width: 992px;
-  left: -moz-calc(50% - 496px);
-  left: -webkit-calc(50% - 496px);
-  left: calc(50% - 496px);
-  right: -moz-calc(50% - 496px);
-  right: -webkit-calc(50% - 496px);
-  right: calc(50% - 496px);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .topWrapper {
+    width: 100%;
+  }
+}
+/* .mainWrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 992px;
+	left: -moz-calc(50% - 496px);
+	left: -webkit-calc(50% - 496px);
+	left: calc(50% - 496px);
+	right: -moz-calc(50% - 496px);
+	right: -webkit-calc(50% - 496px);
+	right: calc(50% - 496px);
 }
 
 @media (max-width: 992px) {
-  .mainWrapper {
-    width: 750px;
-    left: -moz-calc(50% - 384px);
-    left: -webkit-calc(50% - 384px);
-    left: calc(50% - 384px);
-    right: -moz-calc(50% - 384px);
-    right: -webkit-calc(50% - 384px);
-    right: calc(50% - 384px);
-  }
+	.mainWrapper {
+		width: 750px;
+		left: -moz-calc(50% - 384px);
+		left: -webkit-calc(50% - 384px);
+		left: calc(50% - 384px);
+		right: -moz-calc(50% - 384px);
+		right: -webkit-calc(50% - 384px);
+		right: calc(50% - 384px);
+	}
 }
 @media (max-width: 768px) {
-  .mainWrapper {
-    width: calc(100% - 40px);
-    left: 20px;
-    right: 20px;
-  }
-}
+	.mainWrapper {
+		width: calc(100% - 40px);
+		left: 20px;
+		right: 20px;
+	}
+} */
 .carousel-control {
   width: 55px;
   height: 60px;
@@ -281,12 +341,12 @@ body * {
   box-shadow: 4px 8px 0 0 rgba(0, 0, 0, 0.15);
 }
 .ourCarousel .carousel-indicators {
-  bottom: 35px;
+  bottom: 45px;
 }
 .ourCarousel .carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  border: 4px solid #ff5722;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ff5722;
   border-radius: 10px;
   display: inline-block;
   margin: 1px;
@@ -319,7 +379,8 @@ body * {
 }
 
 .avatarBehindDesk {
-  width: 35%;
+  width: 420px;
+  min-width: 200px;
   height: auto;
   position: fixed;
   top: auto;
@@ -329,6 +390,12 @@ body * {
   width: 100%;
   height: auto;
   display: block;
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+  .avatarBehindDesk {
+    width: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

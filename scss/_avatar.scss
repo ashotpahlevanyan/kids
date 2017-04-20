@@ -1,16 +1,26 @@
 .avatarBehindDesk {
 	// width: 306.5px; //613px;
 	// height: 274px; //548px;
-	width: 35%;
+	//width: 35%;
+	width: 420px;
+	min-width: 200px;
 	// min-height: 274px;
 	height: auto;
 	position: fixed;
 	top: auto;
 	bottom: 0;
-	@extend .leftAlignMixin;
+	//@extend .leftAlignMixin;
 	img {
 		width: 100%;
 		height: auto;
 		display: block;
 	}
 }
+
+@media screen and(max-width: 992px) and (orientation: landscape) {
+	.avatarBehindDesk {
+		width: 350px;
+	}
+}
+
+

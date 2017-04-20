@@ -53,6 +53,15 @@ $colorBlack: #000;		//black
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+.noMargin {
+	margin: 0;
+}
+.noPadding {
+	padding: 0;
+}
+.lineHeightNormal {
+	line-height: $lineHeightNormal;
+}
 %fontStrong {
 	/* font weight for any text */
 	font-weight: bold;

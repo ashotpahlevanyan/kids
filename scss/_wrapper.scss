@@ -33,11 +33,30 @@
 	}
 }
 
+.topWrapper {
+	width: 992px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.topWrapper {
+		width: 100%;
+	}
+}
 
 
 
 
-.mainWrapper {
+
+// @media screen and(max-width: 992px) and (orientation: landscape) {
+// 	body {
+// 		background-image: none;
+// 		background-color: blue;
+// 	}
+// }
+
+
+/* .mainWrapper {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -67,5 +86,4 @@
 		left: 20px;
 		right: 20px;
 	}
-}
-
+} */

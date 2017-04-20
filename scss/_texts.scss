@@ -1,0 +1,50 @@
+/* text styles */
+
+.textBig-40 {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: 2 * $fontBaseSize;
+  color: $space-blue;
+}
+
+.textBig-40-white {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: 2 * $fontBaseSize;
+  text-align: center;
+  color: #ffffff;
+}
+
+.textStandard-28 {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: 1.4 * $fontBaseSize;
+  color: $space-blue;
+}
+
+.textStandard-28-white {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: 1.4 * $fontBaseSize;
+  text-align: center;
+  color: #ffffff;
+}
+
+.textSmall-20-Orange {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: $fontBaseSize;
+  color: #ff5020;
+}
+
+.textSmall-20 {
+  @extend .noMargin;
+  @extend .lineHeightNormal;
+  font-family: FredokaOne;
+  font-size: $fontBaseSize;
+}
