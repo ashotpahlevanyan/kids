@@ -38,6 +38,11 @@
 	margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+	.topWrapper {
+		width: 100%;
+	}
+}
 @media (max-width: 768px) {
 	.topWrapper {
 		width: 100%;

@@ -15,6 +15,14 @@
 			background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
 		}
+		&.disabled {
+			background: url("../images/arrowLeftGray.svg") 0 0 no-repeat;
+			background-size: 50px 55px;
+			&:hover {
+				background: url("../images/arrowLeftGrayClick.svg") 0 0 no-repeat;
+				background-size: 50px 55px;
+			}
+		}
 	}
 	&.right {
 		right: 37.5px;
@@ -24,7 +32,24 @@
 			background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
 		}
+		&.disabled {
+			background: url("../images/arrowRightGray.svg") 0 0 no-repeat;
+			background-size: 50px 55px;
+			&:hover {
+				background: url("../images/arrowRightGrayClick.svg") 0 0 no-repeat;
+				background-size: 50px 55px;
+			}
+		}
+		&.submit {
+			background: url("../images/arrowRightGreen.svg") 0 0 no-repeat;
+			background-size: 50px 55px;
+			&:hover {
+				background: url("../images/arrowRightGreenClick.svg") 0 0 no-repeat;
+				background-size: 50px 55px;
+			}
+		}
 	}
+
 }
 
 .carouselWrapper {
@@ -32,9 +57,10 @@
 	padding-left: 50px;
 	background-color: transparent;
 	//@extend .rightAlignMixin;
-	width: calc(57.5% - 496px);
-	min-width: 450px;
-	
+	//width: calc(57.5% - 496px);
+	width: 50%;
+	//min-width: 450px;
+	position: relative;
 	top: 0;
 	.whiteArrow {
 		position: absolute;
@@ -61,13 +87,17 @@
 	// width: 400px;//800px;
 	// height: 333.5px; //667px;
 	min-height: 333.5px;
-	padding: 37.5px 37.5px 32.5px 37.5px;
+	padding: 37.5px 37.5px 107px 37.5px;
 	background-color: #fff;
 	border-radius: 15px;
 	box-shadow: 4px 8px 0 0 rgba(0, 0, 0, 0.15);
 	.carousel-indicators {
+		cursor: default;
+		pointer-events: none;
 		bottom: 45px;
 		li {
+			cursor: default;
+			pointer-events: none;
 			width: 15px;
 			height: 15px;
 			border: 3px solid $deep-orange;
@@ -90,3 +120,5 @@
 	height: -webkit-calc(100% - 91px);
 	height: calc(100% - 91px);
 }
+
+

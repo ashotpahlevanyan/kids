@@ -96,6 +96,10 @@ a img {
 =====================================*/
 /* placeholders for repeated elements 
 =====================================*/
+.form label, .form .form-control {
+  font-family: "FredokaOne", Helvetica, sans-serif;
+}
+
 .noMargin, .textBig-40, .textBig-40-white, .textStandard-28, .textStandard-28-white, .textSmall-20-Orange, .textSmall-20 {
   margin: 0;
 }
@@ -205,7 +209,7 @@ body * {
   right: calc(50% - 496px);
 }
 
-.leftAlignMixin {
+.leftAlignMixin, .avatarBehindDesk {
   position: absolute;
   left: -moz-calc(50% - 496px);
   left: -webkit-calc(50% - 496px);
@@ -219,7 +223,7 @@ body * {
     right: calc(50% - 384px);
   }
 
-  .leftAlignMixin {
+  .leftAlignMixin, .avatarBehindDesk {
     left: -moz-calc(50% - 384px);
     left: -webkit-calc(50% - 384px);
     left: calc(50% - 384px);
@@ -230,7 +234,7 @@ body * {
     right: 20px;
   }
 
-  .leftAlignMixin {
+  .leftAlignMixin, .avatarBehindDesk {
     left: 20px;
   }
 }
@@ -239,6 +243,11 @@ body * {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .topWrapper {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .topWrapper {
     width: 100%;
@@ -294,6 +303,14 @@ body * {
   background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
+.carousel-control.left.disabled {
+  background: url("../images/arrowLeftGray.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.left.disabled:hover {
+  background: url("../images/arrowLeftGrayClick.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
 .carousel-control.right {
   right: 37.5px;
   background: url("../images/arrowRightOrange.svg") 0 0 no-repeat;
@@ -303,13 +320,29 @@ body * {
   background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
+.carousel-control.right.disabled {
+  background: url("../images/arrowRightGray.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.right.disabled:hover {
+  background: url("../images/arrowRightGrayClick.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.right.submit {
+  background: url("../images/arrowRightGreen.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
+.carousel-control.right.submit:hover {
+  background: url("../images/arrowRightGreenClick.svg") 0 0 no-repeat;
+  background-size: 50px 55px;
+}
 
 .carouselWrapper {
   margin-top: 50px;
   padding-left: 50px;
   background-color: transparent;
-  width: calc(57.5% - 496px);
-  min-width: 450px;
+  width: 50%;
+  position: relative;
   top: 0;
 }
 .carouselWrapper .whiteArrow {
@@ -335,15 +368,19 @@ body * {
 
 .ourCarousel {
   min-height: 333.5px;
-  padding: 37.5px 37.5px 32.5px 37.5px;
+  padding: 37.5px 37.5px 107px 37.5px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 4px 8px 0 0 rgba(0, 0, 0, 0.15);
 }
 .ourCarousel .carousel-indicators {
+  cursor: default;
+  pointer-events: none;
   bottom: 45px;
 }
 .ourCarousel .carousel-indicators li {
+  cursor: default;
+  pointer-events: none;
   width: 15px;
   height: 15px;
   border: 3px solid #ff5722;
@@ -367,10 +404,12 @@ body * {
 }
 
 .logoRocket {
-  width: 102px;
+  width: 15%;
   max-width: 100%;
   max-height: 100%;
   height: 190px;
+  min-width: 74px;
+  max-width: 102px;
   display: block;
 }
 .logoRocket img {
@@ -379,12 +418,13 @@ body * {
 }
 
 .avatarBehindDesk {
-  width: 420px;
-  min-width: 200px;
+  width: 450px;
+  min-width: 170px;
   height: auto;
   position: fixed;
   top: auto;
   bottom: 0;
+  z-index: 4;
 }
 .avatarBehindDesk img {
   width: 100%;
@@ -392,9 +432,222 @@ body * {
   display: block;
 }
 
-@media screen and (max-width: 992px) and (orientation: landscape) {
+.topWrapper {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .avatarBehindDesk {
-    width: 350px;
+    width: 43%;
+  }
+
+  .carouselWrapper {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .ourCarousel {
+    padding: 20px 15px 60px 15px;
+    min-height: 260px;
+  }
+
+  .carousel-control {
+    width: 27.5px;
+    height: 30px;
+    bottom: 15px;
+  }
+  .carousel-control.left, .carousel-control.right, .carousel-control.left:hover, .carousel-control.right:hover, .carousel-control.left.disabled, .carousel-control.right.disabled, .carousel-control.left.disabled:hover, .carousel-control.right.disabled:hover, .carousel-control.right.submit, .carousel-control.right.submit:hover {
+    background-size: 25px 27.5px;
+  }
+
+  .ourCarousel .carousel-indicators {
+    bottom: 15px;
+    /* li {
+    	width: 10px;
+    	height: 10px;
+    	border: 2px solid $deep-orange;
+    } */
+  }
+  .ourCarousel .carousel-indicators + li {
+    margin-left: 3px;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .carouselWrapper {
+    padding-left: 25px;
+  }
+  .carouselWrapper .whiteArrow {
+    border-right-width: 25px;
+    border-bottom-width: 20px;
+    border-top-width: 20px;
+    bottom: 30px;
+    left: 0;
+  }
+  .carouselWrapper .transparentArrow {
+    border-right-width: 23px;
+    border-bottom-width: 18px;
+    border-top-width: 18px;
+    bottom: 27px;
+    left: 2px;
+  }
+
+  .carousel-control.left {
+    left: 15px;
+  }
+  .carousel-control.right {
+    right: 15px;
+  }
+
+  .ourCarousel .carousel-indicators {
+    bottom: 17px;
+  }
+  .ourCarousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ff5722;
+  }
+  .ourCarousel .carousel-indicators li + li {
+    margin-left: 1px;
+  }
+
+  .textBig-40 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    background-image: none;
+    background-color: #abcdef;
+  }
+
+  .topWrapper {
+    padding: 0;
+  }
+
+  .avatarBehindDesk {
+    width: 72%;
+  }
+
+  .textBig-40 {
+    font-size: 16px;
+  }
+
+  .carouselWrapper {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .carouselWrapper .whiteArrow {
+    border-top: 35px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: none;
+    left: 50%;
+    margin-left: -24.5px;
+    bottom: -35px;
+  }
+  .carouselWrapper .transparentArrow {
+    border-top: 43px solid rgba(0, 0, 0, 0.15);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: none;
+    left: 50%;
+    margin-left: -26.5px;
+    bottom: -43px;
+  }
+
+  .ourCarousel {
+    border-radius: 0;
+    padding: 15px 15px 40px 15px;
+    min-height: 220px;
+  }
+
+  .ourCarousel .carousel-indicators {
+    bottom: 12px;
+  }
+  .ourCarousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ff5722;
+  }
+  .ourCarousel .carousel-indicators li + li {
+    margin-left: 1px;
+  }
+
+  .carousel-control.left {
+    left: 15px;
+  }
+  .carousel-control.right {
+    right: 15px;
+  }
+
+  .carousel-control {
+    width: 27.5px;
+    height: 30px;
+    bottom: 10px;
+  }
+  .carousel-control.left, .carousel-control.right, .carousel-control.left:hover, .carousel-control.right:hover, .carousel-control.left.disabled, .carousel-control.right.disabled, .carousel-control.left.disabled:hover, .carousel-control.right.disabled:hover, .carousel-control.right.submit, .carousel-control.right.submit:hover {
+    background-size: 25px 27.5px;
+  }
+
+  .logoRocket {
+    float: right !important;
+    margin-right: 20px;
+  }
+}
+.form {
+  margin-top: 5px;
+}
+.form label {
+  font-size: 14px;
+  color: #ff5722;
+  font-weight: 600;
+}
+.form .form-control {
+  font-weight: 600;
+  height: 45px;
+  background-color: #eeeeee;
+  line-height: 1.2;
+  font-family: FredokaOne;
+  font-size: 14px;
+  color: #0b0433;
+  border: none;
+  border-left: 5px solid #ff5722;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form .form-control:focus, .form .form-control:active {
+  box-shadow: none;
+}
+.form .form-group {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .form .form-control {
+    height: 40px;
+  }
+}
+.animation img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  height: 80px;
+  text-align: right;
+  padding-right: 60px;
+  margin-top: 80px;
+}
+.arrow img {
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    margin-top: 30px;
+    padding-right: 30px;
   }
 }
 
