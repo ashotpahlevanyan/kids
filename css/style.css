@@ -156,8 +156,8 @@ body * {
 =====================================================*/
 @font-face {
   font-family: 'FredokaOne';
-  src: url("fonts/FredokaOne.eot");
-  src: url("fonts/FredokaOne-Regular.ttf") format("truetype");
+  src: url("../fonts/FredokaOne.eot");
+  src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -367,7 +367,7 @@ body * {
 }
 
 .ourCarousel {
-  min-height: 333.5px;
+  min-height: 360px;
   padding: 37.5px 37.5px 107px 37.5px;
   background-color: #fff;
   border-radius: 15px;
@@ -438,7 +438,7 @@ body * {
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .avatarBehindDesk {
-    width: 43%;
+    width: 40%;
   }
 
   .carouselWrapper {
@@ -448,7 +448,7 @@ body * {
 
   .ourCarousel {
     padding: 20px 15px 60px 15px;
-    min-height: 260px;
+    min-height: 290px;
   }
 
   .carousel-control {
@@ -601,10 +601,8 @@ body * {
 .form label {
   font-size: 14px;
   color: #ff5722;
-  font-weight: 600;
 }
 .form .form-control {
-  font-weight: 600;
   height: 45px;
   background-color: #eeeeee;
   line-height: 1.2;

@@ -18,11 +18,11 @@
 <body>
 	<div class="topWrapper clearfix">
         <div class="carouselWrapper pull-right">
-            <div id="myCarousel" class="carousel slide ourCarousel" data-ride="carousel" data-interval="false">
+            <div id="myCarousel" class="carousel slide ourCarousel" data-ride="carousel" data-interval="false" data-wrap="false">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
@@ -33,21 +33,21 @@
                     <div class="item active">
                        <h3 class="textBig-40">Hey, ik ben Sporti, ik kom van een planeet hier niet zo ver vandaan! Vandaag ben ik je persoonlijke reisgids! Ik breng je naar jouw leukste sportplaneten!</h3> 
                     </div>
-                    <div class="item  formInvalid">
+                    <div class="item withForm formInvalid">
                         <h3 class="textBig-40">Maar genoeg over mezelf, hoe heet jij eigenlijk?</h3>
-                        <form action="" class="form">
+                        <form action="" id="form" class="form invalid">
 							<div class="form-group">
 								<label for="name" class="textSmall-28-Orange">Voornaam</label>
-								<input type="text" class="form-control" id="name" placeholder="voornaam">
+								<input id="name" type="text" class="form-control" id="name" placeholder="voornaam" autocomplete="off">
 							</div>
 							<div class="form-group">
 								<label for="surname" class="textSmall-28-Orange">Achternaam</label>
-								<input type="text" class="form-control" id="surname" placeholder="achternaam">
+								<input id="surname" type="text" class="form-control" id="surname" placeholder="achternaam" autocomplete="off">
 							</div>
                         </form>
                     </div>
                     <div class="item">
-                        <h3 class="textBig-40">Leuk je te ontmoeten (voornnaam)! Om je naar de beste sportplaneten te kunnen sturen, moet ik je eerst wat beter leren kennen.</h3>
+                        <h3 class="textBig-40">Leuk je te ontmoeten <span class="initname"></span>! Om je naar de beste sportplaneten te kunnen sturen, moet ik je eerst wat beter leren kennen.</h3>
                     </div>
                     <div class="item">
                         <h3 class="textBig-40">Ik doe enkele bewegingen voor, en jij duidt aan hoe leuk je die vindt!</h3>
@@ -82,11 +82,11 @@
             <span class="transparentArrow"></span>
         </div>
         <a href="#" class="logoRocket pull-left">
-            <img src="images/flagRocket_ref.png" alt="logoRocket">
+            <img src="./images/flagRocket_ref.png" alt="logoRocket">
         </a>
     </div>
     <div class="avatarBehindDesk">
-        <img src="images/avatarBehindDesk_ref.png" alt="avatar">
+        <img src="./images/avatarBehindDesk_REF.png" alt="avatar">
     </div>
     
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
