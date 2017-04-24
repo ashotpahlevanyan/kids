@@ -493,13 +493,13 @@ body * {
     bottom: -35px;
   }
   .carouselWrapper .transparentArrow {
-    border-top: 43px solid rgba(0, 0, 0, 0.15);
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+    border-top: 33px solid rgba(0, 0, 0, 0.15);
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
     border-bottom: none;
     left: 50%;
-    margin-left: -26.5px;
-    bottom: -43px;
+    margin-left: -19.5px;
+    bottom: -41px;
   }
 
   .ourCarousel {
