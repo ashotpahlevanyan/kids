@@ -367,7 +367,7 @@ body * {
 }
 
 .ourCarousel {
-  min-height: 360px;
+  min-height: 333.5px;
   padding: 37.5px 37.5px 107px 37.5px;
   background-color: #fff;
   border-radius: 15px;
@@ -376,7 +376,7 @@ body * {
 .ourCarousel .carousel-indicators {
   cursor: default;
   pointer-events: none;
-  bottom: 45px;
+  bottom: 48px;
 }
 .ourCarousel .carousel-indicators li {
   cursor: default;
@@ -404,11 +404,11 @@ body * {
 }
 
 .logoRocket {
-  width: 15%;
+  width: 10%;
   max-width: 100%;
   max-height: 100%;
   height: 190px;
-  min-width: 74px;
+  min-width: 51px;
   max-width: 102px;
   display: block;
 }
@@ -417,6 +417,14 @@ body * {
   height: auto;
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .logoRocket {
+    float: right !important;
+    margin-right: 20px;
+    width: 20%;
+    min-width: 74px;
+  }
+}
 .avatarBehindDesk {
   width: 450px;
   min-width: 170px;
@@ -438,38 +446,12 @@ body * {
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .avatarBehindDesk {
-    width: 40%;
+    width: 32%;
   }
 
   .carouselWrapper {
     width: 60%;
     margin-top: 20px;
-  }
-
-  .ourCarousel {
-    padding: 20px 15px 60px 15px;
-    min-height: 290px;
-  }
-
-  .carousel-control {
-    width: 27.5px;
-    height: 30px;
-    bottom: 15px;
-  }
-  .carousel-control.left, .carousel-control.right, .carousel-control.left:hover, .carousel-control.right:hover, .carousel-control.left.disabled, .carousel-control.right.disabled, .carousel-control.left.disabled:hover, .carousel-control.right.disabled:hover, .carousel-control.right.submit, .carousel-control.right.submit:hover {
-    background-size: 25px 27.5px;
-  }
-
-  .ourCarousel .carousel-indicators {
-    bottom: 15px;
-    /* li {
-    	width: 10px;
-    	height: 10px;
-    	border: 2px solid $deep-orange;
-    } */
-  }
-  .ourCarousel .carousel-indicators + li {
-    margin-left: 3px;
   }
 }
 @media screen and (max-width: 736px) and (orientation: landscape) {
@@ -498,6 +480,20 @@ body * {
     right: 15px;
   }
 
+  .ourCarousel {
+    padding: 20px 15px 60px 15px;
+    min-height: 260px;
+  }
+
+  .carousel-control {
+    width: 27.5px;
+    height: 30px;
+    bottom: 15px;
+  }
+  .carousel-control.left, .carousel-control.right, .carousel-control.left:hover, .carousel-control.right:hover, .carousel-control.left.disabled, .carousel-control.right.disabled, .carousel-control.left.disabled:hover, .carousel-control.right.disabled:hover, .carousel-control.right.submit, .carousel-control.right.submit:hover {
+    background-size: 25px 27.5px;
+  }
+
   .ourCarousel .carousel-indicators {
     bottom: 17px;
   }
@@ -515,11 +511,6 @@ body * {
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  body {
-    background-image: none;
-    background-color: #abcdef;
-  }
-
   .topWrapper {
     padding: 0;
   }
@@ -558,6 +549,11 @@ body * {
 
   .ourCarousel {
     border-radius: 0;
+  }
+}
+@media screen and (max-width: 543px) and (orientation: portrait) {
+  .ourCarousel {
+    border-radius: 0;
     padding: 15px 15px 40px 15px;
     min-height: 220px;
   }
@@ -588,11 +584,6 @@ body * {
   }
   .carousel-control.left, .carousel-control.right, .carousel-control.left:hover, .carousel-control.right:hover, .carousel-control.left.disabled, .carousel-control.right.disabled, .carousel-control.left.disabled:hover, .carousel-control.right.disabled:hover, .carousel-control.right.submit, .carousel-control.right.submit:hover {
     background-size: 25px 27.5px;
-  }
-
-  .logoRocket {
-    float: right !important;
-    margin-right: 20px;
   }
 }
 .form {
