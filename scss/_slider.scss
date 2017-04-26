@@ -11,14 +11,14 @@
 		left: 37.5px;
 		background: url("../images/arrowLeftOrange.svg") 0 0 no-repeat;
 		background-size: 50px 55px;
-		&:hover {
+		&:active {
 			background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
 		}
 		&.disabled {
 			background: url("../images/arrowLeftGray.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
-			&:hover {
+			&:active {
 				background: url("../images/arrowLeftGrayClick.svg") 0 0 no-repeat;
 				background-size: 50px 55px;
 			}
@@ -28,14 +28,14 @@
 		right: 37.5px;
 		background: url("../images/arrowRightOrange.svg") 0 0 no-repeat;
 		background-size: 50px 55px;
-		&:hover {
+		&:active {
 			background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
 		}
 		&.disabled {
 			background: url("../images/arrowRightGray.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
-			&:hover {
+			&:active {
 				background: url("../images/arrowRightGrayClick.svg") 0 0 no-repeat;
 				background-size: 50px 55px;
 			}
@@ -43,7 +43,7 @@
 		&.submit {
 			background: url("../images/arrowRightGreen.svg") 0 0 no-repeat;
 			background-size: 50px 55px;
-			&:hover {
+			&:active {
 				background: url("../images/arrowRightGreenClick.svg") 0 0 no-repeat;
 				background-size: 50px 55px;
 			}

@@ -315,7 +315,7 @@ body * {
   background: url("../images/arrowLeftOrange.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
-.carousel-control.left:hover {
+.carousel-control.left:active {
   background: url("../images/arrowLeftOrangeClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
@@ -323,7 +323,7 @@ body * {
   background: url("../images/arrowLeftGray.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
-.carousel-control.left.disabled:hover {
+.carousel-control.left.disabled:active {
   background: url("../images/arrowLeftGrayClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
@@ -332,7 +332,7 @@ body * {
   background: url("../images/arrowRightOrange.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
-.carousel-control.right:hover {
+.carousel-control.right:active {
   background: url("../images/arrowRightOrangeClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
@@ -340,7 +340,7 @@ body * {
   background: url("../images/arrowRightGray.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
-.carousel-control.right.disabled:hover {
+.carousel-control.right.disabled:active {
   background: url("../images/arrowRightGrayClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
@@ -348,7 +348,7 @@ body * {
   background: url("../images/arrowRightGreen.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
-.carousel-control.right.submit:hover {
+.carousel-control.right.submit:active {
   background: url("../images/arrowRightGreenClick.svg") 0 0 no-repeat;
   background-size: 50px 55px;
 }
