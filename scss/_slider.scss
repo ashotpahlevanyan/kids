@@ -85,8 +85,8 @@
 .ourCarousel {
 	// width: 400px;//800px;
 	// height: 333.5px; //667px;
-	min-height: 333.5px;
-	//min-height: 360px;
+	//min-height: 333.5px;
+	min-height: 360px;
 	padding: 37.5px 37.5px 107px 37.5px;
 	background-color: #fff;
 	border-radius: 15px;
@@ -155,27 +155,30 @@
 		}
 	}
 	.ourCarousel {
-		padding: 20px 15px 60px 15px;
+		padding: 20px 15px 90px 15px;
 		min-height: 290px;
 	}
 	.carousel-control {
-		width: 27.5px;
-		height: 30px;
 		bottom: 15px;
-		&.left, &.right,
-		&.left:hover, &.right:hover,
-		&.left.disabled, &.right.disabled, 
-		&.left.disabled:hover, &.right.disabled:hover,
-		&.right.submit, &.right.submit:hover {
-			background-size: 25px 27.5px;
-		}
 	}
+	// .carousel-control {
+	// 	width: 27.5px;
+	// 	height: 30px;
+	// 	bottom: 15px;
+	// 	&.left, &.right,
+	// 	&.left:hover, &.right:hover,
+	// 	&.left.disabled, &.right.disabled, 
+	// 	&.left.disabled:hover, &.right.disabled:hover,
+	// 	&.right.submit, &.right.submit:hover {
+	// 		background-size: 25px 27.5px;
+	// 	}
+	// }
 	.ourCarousel {
 		.carousel-indicators {
-			bottom: 17px;
+			bottom: 37px;
 			li {
-				width: 12px;
-				height: 12px;
+				width: 10px;
+				height: 10px;
 				border: 2px solid $deep-orange;
 				& + li {
 					margin-left: 1px;
@@ -217,12 +220,12 @@
 @media screen and (max-width: 543px) and (orientation: portrait) {
 	.ourCarousel {
 		border-radius: 0;
-		padding: 15px 15px 40px 15px;
-		min-height: 220px;
+		padding: 15px 15px 70px 15px;
+		min-height: 260px;
 	}
 	.ourCarousel {
 		.carousel-indicators {
-			bottom: 12px;
+			bottom: 30px;
 			li {
 				width: 12px;
 				height: 12px;
@@ -242,17 +245,20 @@
 		}
 	}
 	.carousel-control {
-		width: 27.5px;
-		height: 30px;
 		bottom: 10px;
-		&.left, &.right,
-		&.left:hover, &.right:hover,
-		&.left.disabled, &.right.disabled, 
-		&.left.disabled:hover, &.right.disabled:hover,
-		&.right.submit, &.right.submit:hover {
-			background-size: 25px 27.5px;
-		}
 	}
+	// .carousel-control {
+	// 	width: 27.5px;
+	// 	height: 30px;
+	// 	bottom: 10px;
+	// 	&.left, &.right,
+	// 	&.left:hover, &.right:hover,
+	// 	&.left.disabled, &.right.disabled, 
+	// 	&.left.disabled:hover, &.right.disabled:hover,
+	// 	&.right.submit, &.right.submit:hover {
+	// 		background-size: 25px 27.5px;
+	// 	}
+	// }
 }
 
 
